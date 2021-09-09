@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+{% block title %}Hello{% endblock %}
+{% block css %}
+.input-group{
+  width: 90vw;
+}
+.ff{
+  height:90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  flex-direction:column;
+}
+{% endblock %}
+{% block body %}
+
+<form action="/mark" method="GET" class="ff">
+  <h4>Fill The Form</h4>
+  <div class="input-group mb-3">
+      <span class="input-group-text">First and last name</span>
+      <input type="text" aria-label="First name" class="form-control" name="fname" id="fname">
+      <input type="text" aria-label="Last name" name="lname" id="lname" class="form-control">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">1st Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem1" id="sem1">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">2nd Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem2" id="sem2">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">3rd Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem3" id="sem3">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">4th Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem4" id="sem4">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">5th Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem5" id="sem5">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">6th Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem6" id="sem6">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">7th Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem7" id="sem7">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">8th Sem</span>
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your total mark" name="sem8" id="sem8">
+    </div>
+ 
+    <button type="submit" class="btn btn-primary">Submit</button>
+    {{range}}
+</form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Users{% endblock %}
+{% block body %}
+{% for i in user %}
+<div class="col my-2 ">
+    <h2>
+        Name = {{i.user_name}}
+    </h2>
+    <h5>
+        Total = {{i.user_total}}
+    </h5>
+    <h5>
+        In Persent = {{i.user_percent}}
+    </h5>
+    <h5>
+        Division = {{i.user_division}}
+    </h5>
+</div>
+<hr>
+{% endfor %}
+    
+{% endblock %}
